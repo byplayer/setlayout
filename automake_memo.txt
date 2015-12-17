@@ -1,0 +1,8 @@
+make Makefile.am
+
+    autoscan
+    mv configure.{scan,ac}
+    autoheader
+    aclocal
+
+    automake --add-missing --copy
