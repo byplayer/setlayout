@@ -2,7 +2,13 @@ make Makefile.am
 
     autoscan
     mv configure.{scan,ac}
+
+add
+AM_INIT_AUTOMAKE
+after AC_INIT
+    
     autoheader
     aclocal
+    autoconf
 
     automake --add-missing --copy
